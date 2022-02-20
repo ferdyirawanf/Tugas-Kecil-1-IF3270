@@ -6,16 +6,16 @@ Tugas eksplorasi library sklearn dengan enam algoritma pembelajaran yaitu Decisi
 ## Instalasi : 
 1. Install pydotplus 
    > di command prompt anaconda
-       > conda install pydotplus
+       >> conda install pydotplus
 2. Install graphviz
    > di command prompt anaconda
-       > conda install graphviz
+       >> conda install graphviz
 3. Download graphviz installer terbaru 
    > https://www.graphviz.org/download/
    > Install lalu set environment variable 
-        > di PATH user & system
-            > C:\Program Files (x86)\Graphvi\bin\
-            > C:\Program Files (x86)\Graphvi\bin\dot.exe
+        >> di PATH user & system
+            >>> C:\Program Files (x86)\Graphvi\bin\
+            >>> C:\Program Files (x86)\Graphvi\bin\dot.exe
 
 
 ## Run Program : 
