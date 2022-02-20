@@ -1,56 +1,56 @@
 digraph ID3_Tree {
-"0" [shape=box, style=filled, label="worst radius
+"0" [shape=box, style=filled, label="worst concave points
 ", weight=1]
-"1" [shape=box, style=filled, label="worst concave points
+"1" [shape=box, style=filled, label="worst radius
 ", weight=2]
-0 -> 1 [ label = "<=16.80"];
-"2" [shape=box, style=filled, label="radius error
+0 -> 1 [ label = "<=0.14"];
+"2" [shape=box, style=filled, label="area error
 ", weight=3]
-1 -> 2 [ label = "<=0.14"];
+1 -> 2 [ label = "<=16.80"];
 "3" [shape=box, style=filled, label="1
-(261/2)
+(255/3)
 ", weight=4]
-2 -> 3 [ label = "<=0.64"];
-"4" [shape=box, style=filled, label="0
-(2/2)
+2 -> 3 [ label = "<=38.60"];
+"4" [shape=box, style=filled, label="1
+(8/3)
 ", weight=4]
-2 -> 4 [ label = ">0.64"];
-"5" [shape=box, style=filled, label="worst texture
+2 -> 4 [ label = ">38.60"];
+"5" [shape=box, style=filled, label="mean texture
 ", weight=3]
-1 -> 5 [ label = ">0.14"];
+1 -> 5 [ label = ">16.80"];
 "6" [shape=box, style=filled, label="1
-(14/4)
+(7)
 ", weight=4]
-5 -> 6 [ label = "<=26.90"];
+5 -> 6 [ label = "<=16.38"];
 "7" [shape=box, style=filled, label="0
-(16)
+(17/2)
 ", weight=4]
-5 -> 7 [ label = ">26.90"];
-"8" [shape=box, style=filled, label="mean concavity
+5 -> 7 [ label = ">16.38"];
+"8" [shape=box, style=filled, label="area error
 ", weight=2]
-0 -> 8 [ label = ">16.80"];
-"9" [shape=box, style=filled, label="mean texture
+0 -> 8 [ label = ">0.14"];
+"9" [shape=box, style=filled, label="concave points error
 ", weight=3]
-8 -> 9 [ label = "<=0.07"];
-"10" [shape=box, style=filled, label="1
-(9/1)
+8 -> 9 [ label = "<=21.92"];
+"10" [shape=box, style=filled, label="0
+(6/1)
 ", weight=4]
-9 -> 10 [ label = "<=19.54"];
-"11" [shape=box, style=filled, label="0
-(11)
+9 -> 10 [ label = "<=0.01"];
+"11" [shape=box, style=filled, label="1
+(7)
 ", weight=4]
-9 -> 11 [ label = ">19.54"];
-"12" [shape=box, style=filled, label="radius error
+9 -> 11 [ label = ">0.01"];
+"12" [shape=box, style=filled, label="mean smoothness
 ", weight=3]
-8 -> 12 [ label = ">0.07"];
+8 -> 12 [ label = ">21.92"];
 "13" [shape=box, style=filled, label="1
 (1)
 ", weight=4]
-12 -> 13 [ label = "<=0.19"];
+12 -> 13 [ label = "<=0.08"];
 "14" [shape=box, style=filled, label="0
-(132)
+(145)
 ", weight=4]
-12 -> 14 [ label = ">0.19"];
+12 -> 14 [ label = ">0.08"];
 {rank=same; 0;};
 {rank=same; 1;8;};
 {rank=same; 2;5;9;12;};

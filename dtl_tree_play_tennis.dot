@@ -1,6 +1,5 @@
 digraph Tree {
-node [shape=box, style="filled", color="black", fontname="helvetica"] ;
-edge [fontname="helvetica"] ;
+node [shape=box, style="filled", color="black"] ;
 0 [label="Outlook <= 0.5\nsamples = 11\nvalue = [4, 7]", fillcolor="#aad5f4"] ;
 1 [label="samples = 3\nvalue = [0, 3]", fillcolor="#399de5"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
@@ -10,7 +9,7 @@ edge [fontname="helvetica"] ;
 2 -> 3 ;
 4 [label="Wind <= 0.5\nsamples = 5\nvalue = [1, 4]", fillcolor="#6ab6ec"] ;
 2 -> 4 ;
-5 [label="Outlook <= 1.5\nsamples = 2\nvalue = [1, 1]", fillcolor="#ffffff"] ;
+5 [label="Temperature <= 1.0\nsamples = 2\nvalue = [1, 1]", fillcolor="#ffffff"] ;
 4 -> 5 ;
 6 [label="samples = 1\nvalue = [1, 0]", fillcolor="#e58139"] ;
 5 -> 6 ;
