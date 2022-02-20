@@ -1,58 +1,51 @@
 digraph ID3_Tree {
-"0" [shape=box, style=filled, label="worst concave points
+"0" [shape=box, style=filled, label="worst perimeter
 ", weight=1]
-"1" [shape=box, style=filled, label="worst radius
+"1" [shape=box, style=filled, label="worst concave points
 ", weight=2]
-0 -> 1 [ label = "<=0.14"];
+0 -> 1 [ label = "<=114.45"];
 "2" [shape=box, style=filled, label="area error
 ", weight=3]
-1 -> 2 [ label = "<=16.80"];
+1 -> 2 [ label = "<=0.11"];
 "3" [shape=box, style=filled, label="1
-(255/3)
+(243/1)
 ", weight=4]
-2 -> 3 [ label = "<=38.60"];
-"4" [shape=box, style=filled, label="1
-(8/3)
+2 -> 3 [ label = "<=48.97"];
+"4" [shape=box, style=filled, label="0
+(3/2)
 ", weight=4]
-2 -> 4 [ label = ">38.60"];
-"5" [shape=box, style=filled, label="mean texture
+2 -> 4 [ label = ">48.97"];
+"5" [shape=box, style=filled, label="worst area
 ", weight=3]
-1 -> 5 [ label = ">16.80"];
+1 -> 5 [ label = ">0.11"];
 "6" [shape=box, style=filled, label="1
-(7)
+(25/2)
 ", weight=4]
-5 -> 6 [ label = "<=16.38"];
+5 -> 6 [ label = "<=710.20"];
 "7" [shape=box, style=filled, label="0
-(17/2)
+(24/14)
 ", weight=4]
-5 -> 7 [ label = ">16.38"];
-"8" [shape=box, style=filled, label="area error
+5 -> 7 [ label = ">710.20"];
+"8" [shape=box, style=filled, label="mean concave points
 ", weight=2]
-0 -> 8 [ label = ">0.14"];
-"9" [shape=box, style=filled, label="concave points error
+0 -> 8 [ label = ">114.45"];
+"9" [shape=box, style=filled, label="mean compactness
 ", weight=3]
-8 -> 9 [ label = "<=21.92"];
+8 -> 9 [ label = "<=0.05"];
 "10" [shape=box, style=filled, label="0
-(6/1)
+(5)
 ", weight=4]
-9 -> 10 [ label = "<=0.01"];
+9 -> 10 [ label = "<=0.07"];
 "11" [shape=box, style=filled, label="1
-(7)
+(4/1)
 ", weight=4]
-9 -> 11 [ label = ">0.01"];
-"12" [shape=box, style=filled, label="mean smoothness
+9 -> 11 [ label = ">0.07"];
+"12" [shape=box, style=filled, label="0
+(131)
 ", weight=3]
-8 -> 12 [ label = ">21.92"];
-"13" [shape=box, style=filled, label="1
-(1)
-", weight=4]
-12 -> 13 [ label = "<=0.08"];
-"14" [shape=box, style=filled, label="0
-(145)
-", weight=4]
-12 -> 14 [ label = ">0.08"];
+8 -> 12 [ label = ">0.05"];
 {rank=same; 0;};
 {rank=same; 1;8;};
 {rank=same; 2;5;9;12;};
-{rank=same; 3;4;6;7;10;11;13;14;};
+{rank=same; 3;4;6;7;10;11;};
 }
